@@ -54,7 +54,7 @@ export default function ModelViewer() {
       >
         <MV
           ref={modelViewerRef}
-          src="/models/model8.glb"
+          src="/models/model9.glb"
           alt="3D Shoe"
           camera-controls
           camera-orbit="270deg 75deg 100%"
