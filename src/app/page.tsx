@@ -21,7 +21,8 @@ export default function Home() {
             Air Jordon
           </h1>
           <p className="w-full lg:w-[500px] opacity-60 text-[18px] lg:text-base">
-            An immersive 3D web experience showcasing the legendary Air Jordan 1. Concept design created for portfolio presentation only.
+            An immersive 3D web experience showcasing the legendary Air Jordan
+            1. Concept design created for portfolio presentation only.
           </p>
           <div className="flex flex-row gap-4 z-10">
             {/* Buy Now → opens portfolio description modal */}
@@ -93,7 +94,7 @@ export default function Home() {
           <>
             <h2 className="text-xl font-bold mb-4">3D Model Attribution</h2>
             <p className="text-sm">
-              "Nike Air Jordan 1" by{" "}
+              &quot;Nike Air Jordan 1&quot; by{" "}
               <a
                 href="https://skfb.ly/oELMK"
                 target="_blank"
