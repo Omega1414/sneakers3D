@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
 }
-
+@theme {
+   --breakpoint-xxs: 400px;
+  
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-obrazec: 'Obrazec', sans-serif;
+    --font-huitside: 'Huitside', sans-serif;
+  }
+
+  html {
+    font-family: var(--font-obrazec);
+    font-family: var(--font-huitside);
+    overflow: hidden;
+  }
+
+  .font-obrazec {
+    font-family: var(--font-obrazec);
+  }
+  .font-huitside {
+    font-family: var(--font-huitside);
   }
 }
+
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@keyframes slowPulse {
+  0% {
+    background: radial-gradient(circle, rgba(0,255,255,0.5) 10%, transparent 80%);
+  }
+  50% {
+    background: radial-gradient(circle, rgba(0,255,255,0.8) 20%, transparent 90%);
+  }
+  100% {
+    background: radial-gradient(circle, rgba(0,255,255,0.5) 10%, transparent 80%);
+  }
+}
+
+.bg-animate {
+  animation: slowPulse 4s ease-in-out infinite;
 }
